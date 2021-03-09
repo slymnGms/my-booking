@@ -1,9 +1,42 @@
 <app-header></app-header>
-<app-searchbox></app-searchbox>
-<app-rooms></app-rooms>
-<app-extras></app-extras>
-<app-contact></app-contact>
-<app-guests></app-guests>
-<app-payment></app-payment>
-<app-basket></app-basket>
+<div class="hotel-advisor-container">
+  <div class="content">
+    <div
+      fxLayout="row wrap" 
+      fxLayoutAlign="space-between"
+      class="mat-elevation-z3 hotel-detail-info hotelItem"
+    >
+      <div fxFlex="50" fxFlex.xs="100">
+        <app-hotelphoto></app-hotelphoto>
+      </div>
+      <div fxFlex="50" fxFlex.xs="100">      
+            <app-hotelinfo></app-hotelinfo>
+      </div>
+    </div>
+
+    <div
+      fxLayout="row"
+      fxLayoutAlign="space-between"
+      class="mat-elevation-z3 hotel-detail-info hotelItem"
+    >
+      <div fxFlex="100">
+        <app-searchbox></app-searchbox>
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="space-between" class="hotel-detail-info">
+      <div fxFlex="66" class="mat-elevation-z3">
+        <app-rooms></app-rooms>
+        <app-extras></app-extras>
+        <app-contact></app-contact>
+        <app-guests></app-guests>
+        <app-payment></app-payment>
+      </div>
+
+      <div fxFlex="33" class="mat-elevation-z3 ">
+        <app-basket></app-basket>
+      </div>
+    </div>
+  </div>
+</div>
 <app-footer></app-footer>

@@ -1,0 +1,18 @@
+.hotel-image-gallery ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hotel-image-gallery ul li {
+    margin-left: 1px;
+}
+
+.hotel-image-gallery ul li img {
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 55px;
+}
+

@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto,Helvetica Neue,sans-serif;
+  font-size: 14px;
+  background-color: #faf8f8;
+
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+/****Header Css **/
+
+.hotel-advisor-container {
+  display: grid;
+
+}
+
+.hotel-advisor-container>* {
+  grid-column: 2;
+}
+
+@media (min-width: 1280px) {
+    .hotel-advisor-container {
+      grid-template-columns: auto 1200px auto;
+    }
+  }
+
+
+  .menu-infix .mat-form-field-infix{
+    padding: 10px !important;
+    width: 60px  !important;
+    border: 0px;
+}
+
+.menu-infix .mat-form-field-wrapper {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.menu-infix .mat-form-field-outline {
+  display: none !important;
+}
+
+
+
+
+/**Header Css End */
