@@ -1,20 +1,37 @@
 .room-type-info-image-bottom-cont {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0,0,0,.25098039215686274);
-    width: 100%;
-    color: #fff;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -ms-flex-align: center;
-    align-items: center;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25098039215686274);
+  width: 100%;
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.room-type-info-image-bottom-cont i{ 
+    margin:2px;
 }
 
 .hotelphoto {
-    height: 100%;
-    object-fit: cover;
+  height: 100%;
+  object-fit: cover;
+}
+.room-amenities {
+  height: 36px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.room-amenities i {
+    border: 1px solid #eee;
+    padding: 7px!important;
+    font-size: 20px;
+    margin-right: 5px;
 }
