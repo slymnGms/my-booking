@@ -46,11 +46,15 @@
   </div>
 </div>
 
-<div fxLayout="row wrap" class="hotelItem m10">
-  <div fxFlex="50">
+<div fxLayout="row wrap" fxLayoutGap="10px" class="hotelItem m10 align-center">
+  <div fxFlex="40">
     <div class="room-properties">
       <div>
-        <button style="border: none" color="primary" mat-stroked-button>
+        <button
+          style="border: none; display: contents"
+          color="primary"
+          mat-stroked-button
+        >
           <mat-icon>info</mat-icon>
         </button>
       </div>
@@ -67,37 +71,45 @@
   </div>
 
   <div fxFlex="15">
-    <div class="room-price-container">
-      <div style="text-align: center">
-        <div class="room-price">
-          <h2 class="hotel-advisor-h2 room-price-h2">
-            <del class=""
-              ><div class="m-line-price">
-                <div class="m-line-price-left">900</div>
-                <div class="m-line-price-right">
-                  <div style="text-align: left">.00</div>
-                  <div>EUR</div>
-                </div>
-              </div>
-            </del>
-            <div class="m-line-price">
-              <div class="m-line-price-left">810</div>
-              <div class="m-line-price-right">
-                <div style="text-align: left">00</div>
-                <div>EUR</div>
-              </div>
-            </div>
-          </h2>
-          <div class="price-percent">%10</div>
+    <div class="room-price">
+      <div class="default-price">
+        <span class="price" style="text-decoration: line-through">900</span>
+        <div class="price-inline">
+          <span style="text-decoration: line-through">.00</span
+          ><span style="text-decoration: line-through">EUR</span>
         </div>
-        <div class="room-price-info">Tek Oda Fiyatı</div>
+      </div>
+
+      <div class="default-price finalPrice">
+        <span class="price">810</span>
+        <div class="price-inline"><span>.00</span><span>EUR</span></div>
       </div>
     </div>
   </div>
 
-  <div fxFlex="15"></div>
+  <div fxFlex="10">
+    <div class="price-percent">%10</div>
+  </div>
 
-  <div fxFlex="15"></div>
+  <div fxFlex="10">
+    <mat-form-field appearance="outline" class="w100 roomCount">
+      <mat-label> Oda Sayısı </mat-label>
+      <mat-select value="1">
+        <mat-option
+          [value]="i + 1"
+          *ngFor="let count of [1, 2, 3, 4, 5, 6]; index as i"
+        >
+          {{ i + 1 }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
 
-  <div fxFlex="15"></div>
+  <div fxFlex="19" style="margin:auto;text-align: center;">
+      <button mat-raised-button color="accent">
+        Satın Al
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+  
+  </div>
 </div>

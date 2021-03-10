@@ -56,3 +56,63 @@
   margin-right: 5px;
 
 }
+
+
+.default-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.default-price .inline-price {
+  display: flex;
+}
+
+.price-inline span {
+  display: block;
+  color: gray;
+  line-height: 11px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.default-price .price {
+  font-size: 22px;
+  font-weight: 500;
+  color: gray;
+}
+
+
+.default-price.finalPrice .price {
+    font-size: 35px !important;
+    color: black !important;
+}
+
+.default-price.finalPrice .price-inline span {
+    color: black !important;
+    line-height: 12px;
+    font-weight: 700;
+}
+
+.default-price.finalPrice .price-inline {
+    margin-top: 10px;
+}
+
+.default-price.finalPrice {
+    margin-top: -10px;
+}
+
+.price-percent {
+  background: #b39ddb;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: center;
+  border-radius: 7px;
+}
+
+::ng-deep .roomCount  .mat-form-field-wrapper  {
+  padding: 0px  !important;
+  margin: 0;
+}
