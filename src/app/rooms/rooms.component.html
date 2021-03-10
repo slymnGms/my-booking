@@ -1,5 +1,5 @@
-<div fxLayout="row wrap" class="hotelItem">
-  <div fxFlex="20" style="position: relative">
+<div fxLayout="row wrap" class="hotelItem m10">
+  <div fxFlex="25" style="position: relative" class="hotel-image">
     <img
       class="w100 hotelphoto"
       src="https://erspublic.blob.core.windows.net/test/170668de-7c8c-4466-8940-073611e53000.jpg"
@@ -11,9 +11,9 @@
       </div>
     </div>
   </div>
-  <div fxFlex="80">
-    <div class="mat-elevation-z3 hotelItem">
-      <h2>Standart Oda</h2>
+  <div fxFlex="75">
+    <div style="padding: 0 10px">
+      <h2 class="m0">Standart Oda</h2>
       <p>
         Kaş Antalya bölgesi Çukurbağ Yarımadasındaki MyHotel Kaş ilçesindeki
         oteller arasında en iyi konaklama deneyimi sunmaktadır. Kaş Antalya
@@ -26,8 +26,6 @@
         <i class="fab fa-keycdn" matTooltip="Wifi"></i>
         <i class="fab fa-keycdn" matTooltip="Wifi"></i>
         <i class="fab fa-keycdn" matTooltip="Wifi"></i>
-
-   
 
         <div
           style="
@@ -46,4 +44,60 @@
       </div>
     </div>
   </div>
+</div>
+
+<div fxLayout="row wrap" class="hotelItem m10">
+  <div fxFlex="50">
+    <div class="room-properties">
+      <div>
+        <button style="border: none" color="primary" mat-stroked-button>
+          <mat-icon>info</mat-icon>
+        </button>
+      </div>
+
+      <div class="infoItem">
+        <mat-icon>local_dining</mat-icon>Oda ve Kahvaltı
+      </div>
+
+      <div class="infoItem">
+        <mat-icon>credit_card</mat-icon>
+        non-refundable
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex="15">
+    <div class="room-price-container">
+      <div style="text-align: center">
+        <div class="room-price">
+          <h2 class="hotel-advisor-h2 room-price-h2">
+            <del class=""
+              ><div class="m-line-price">
+                <div class="m-line-price-left">900</div>
+                <div class="m-line-price-right">
+                  <div style="text-align: left">.00</div>
+                  <div>EUR</div>
+                </div>
+              </div>
+            </del>
+            <div class="m-line-price">
+              <div class="m-line-price-left">810</div>
+              <div class="m-line-price-right">
+                <div style="text-align: left">00</div>
+                <div>EUR</div>
+              </div>
+            </div>
+          </h2>
+          <div class="price-percent">%10</div>
+        </div>
+        <div class="room-price-info">Tek Oda Fiyatı</div>
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex="15"></div>
+
+  <div fxFlex="15"></div>
+
+  <div fxFlex="15"></div>
 </div>

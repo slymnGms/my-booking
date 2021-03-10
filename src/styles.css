@@ -56,13 +56,30 @@ a {
   display: none !important;
 }
 
-.hotelItem{
-  background: white;
-  margin-top: 15px;
-  padding: 15px;
-}
 
 
 
 
 /**Header Css End */
+
+
+.m15 {
+  margin: 15px;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+.hotelItem{
+  background: white;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.mt-15 {
+  margin-top:15px;
+}
+.m0 {
+  margin: 0px;
+}
