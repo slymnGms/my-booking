@@ -1,1 +1,89 @@
-<p>searchbox works!</p>
+<div fxLayout="row wrap" fxLayoutGap="5px">
+  <div fxFlex="15" fxFlex.xs="100">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Giriş</mat-label>
+      <input
+        matInput
+        [min]="minDate"
+        [max]="maxDate"
+        [matDatepicker]="checkIn"
+      />
+      <mat-datepicker-toggle matSuffix [for]="checkIn"></mat-datepicker-toggle>
+      <mat-datepicker #checkIn></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div fxFlex="10" fxFlex.xs="100">
+    <mat-form-field>
+      <mat-label> Gece </mat-label>
+      <i matPrefix class="far fa-moon"></i>
+      <mat-select>
+        <ng-container *ngFor="let asd of mockArrayCreator(60); index as i">
+          <mat-option [value]="i">{{ i }}</mat-option>
+        </ng-container>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div fxFlex="15" fxFlex.xs="100">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Çıkış</mat-label>
+      <input
+        matInput
+        [min]="minDate"
+        [max]="maxDate"
+        [matDatepicker]="checkOut"
+      />
+      <mat-datepicker-toggle matSuffix [for]="checkOut"></mat-datepicker-toggle>
+      <mat-datepicker #checkOut></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <div fxFlex="20" fxFlex.xs="100">
+    <div fxLayout="row">
+      <div fxFlex="50" fxFlex.xs="100" fxLayoutGap="20px">
+        <mat-form-field>
+          <mat-label> Adult </mat-label>
+          <mat-icon matPrefix>person</mat-icon>
+          <mat-select>
+            <ng-container *ngFor="let asd of mockArrayCreator(10); index as i">
+              <mat-option [value]="i">{{ i }}</mat-option>
+            </ng-container>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div fxFlex="50" fxFlex.xs="100">
+        <mat-form-field>
+          <mat-label> Child </mat-label>
+          <mat-icon matPrefix>face</mat-icon>
+          <mat-select>
+            <ng-container *ngFor="let asd of mockArrayCreator(10); index as i">
+              <mat-option [value]="i">{{ i }}</mat-option>
+            </ng-container>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex="20" fxFlex.xs="100">
+    <mat-form-field>
+      <mat-icon matPrefix>card_giftcard</mat-icon>
+      <mat-label> Promosyon </mat-label>
+      <input matInput type="text" />
+    </mat-form-field>
+  </div>
+
+  <div fxFlex="16" fxFlex.xs="100">
+    <div style="margin: auto; display: flex; align-items: center; height: 100%">
+      <button
+        mat-raised-button
+        style="font-size: 20px; width: 100%"
+        color="accent"
+      >
+        <mat-icon>search</mat-icon>
+        Oda Ara
+      </button>
+    </div>
+  </div>
+</div>

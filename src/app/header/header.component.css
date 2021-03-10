@@ -1,0 +1,38 @@
+header {
+    background: #b39ddb;
+}
+
+.header-bottom-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-bottom {
+    display: flex;
+}
+
+.header-bottom-left {
+    align-items: center;
+    display: flex;
+}
+
+.header-onlinecheck a, .header-login-menu a{
+    display: flex;
+    align-items: center;
+}
+
+.headerItem i {
+    color: black;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.menu-infix {
+    height: 30px;
+    align-items: center;
+    display: flex;
+    border-right: 1px solid white;
+    padding: 5px;
+}

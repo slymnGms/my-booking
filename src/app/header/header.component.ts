@@ -7,6 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  langs = [
+    {value: 'Turkish', viewValue: 'TR'},
+    {value: 'English', viewValue: 'EN'},
+    {value: 'Russian', viewValue: 'RU'}
+  ];
+
+  currencys = [
+    {value: 'TL', viewValue: 'TL'},
+    {value: 'USD', viewValue: 'USD'},
+    {value: 'EUR', viewValue: 'EUR'},
+    {value: 'GBP', viewValue: 'GBP'}
+
+  ];
+
+
+
   constructor() { }
 
   ngOnInit(): void {

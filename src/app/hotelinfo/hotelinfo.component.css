@@ -1,0 +1,22 @@
+.hotel-detail-info {
+    background: #fff;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.hotel-contact a {
+    margin-right: 20px;
+        align-items: center;
+}
+
+.map-detail-city {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 44px;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
