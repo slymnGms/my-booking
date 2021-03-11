@@ -1,1 +1,49 @@
-<p>extras works!</p>
+<div fxLayout="row wrap" class="hotelItem m10 align-center">
+  <div fxFlex="100">
+    <h2>Ekstra Bilgileri</h2>
+  </div>
+
+  <div fxLayout="row wrap">
+    <div fxFlex="25">
+      <div>Havalimanı Transferi</div>
+    </div>
+
+    <div fxFlex="25">
+      <div>
+        <p>
+          Konaklamanın giriş tarihine 72 saat öncesine kadar bilgi verildiği
+          taktirde konaklama ücretinin tamamı iade edilirken, güvence ücreti
+          iade edilmez.
+        </p>
+      </div>
+    </div>
+
+    <div fxFlex="25">
+      <div class="extrasAdult">
+        <mat-form-field appearance="outline" class="w100 roomCount">
+          <mat-label>Yetişkin</mat-label>
+          <mat-select value="1">
+            <mat-option
+              [value]="i + 1"
+              *ngFor="let count of [1, 2, 3, 4, 5, 6]; index as i"
+            >
+              {{ i + 1 }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <button
+          style="height: 50px; margin: auto"
+          mat-raised-button
+          color="accent"
+        >
+          Uygula
+        </button>
+      </div>
+    </div>
+
+    <div fxFlex="25">
+      <div class="extraPrice">0.00 EUR</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+.hotel-basket-panel-payment-percent-content {
+    border: 1px solid #ddd;
+    padding: 4px;
+    margin: 10px 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.hotel-basket-panel-payment-percent-price {
+    text-align: end;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.basket-payment mat-expansion-panel.mat-expansion-panel .mat-expansion-panel-header-description {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 0;
+}
+
+.basket-payment .mat-expansion-panel-header-title {
+    font-size: 18px;
+    font-weight: 500;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.basket-payment .mat-expansion-panel-header-title i {
+    font-size: 22px;
+    margin-right: 10px;
+}

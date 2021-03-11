@@ -1,0 +1,21 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Tesis Özellikleri</mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div class="facilitys">
+      <h4>Etkinlikler</h4>
+      <div fxLayout="row wrap" fxLayoutGap="10px">
+        <ng-container *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+          <div fxFlex="20">
+            <div class="hotel-detail-info-amenity-row">
+              <i class="fas fa-globe"></i>
+              <span>At Binme</span><span style="margin-left: 5px">*</span>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

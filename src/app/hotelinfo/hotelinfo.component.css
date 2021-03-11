@@ -4,9 +4,15 @@
     padding: 15px;
 }
 
+
+.hotel-contact {
+    display: flex;
+}
+
 .hotel-contact a {
     margin-right: 20px;
         align-items: center;
+        display:flex;
 }
 
 .map-detail-city {
@@ -19,4 +25,21 @@
     width: 100%;
     text-align: center;
     font-weight: 500;
+}
+
+.hotel-detail-info-defaulte-facility .item {
+    padding: 5px 15px;
+    border: 1px solid #f3f3f3;
+    display: flex;
+    align-items: center;
+}
+
+.hotel-detail-info-defaulte-facility {
+    display: flex;
+    margin: 10px 0px;
+}
+
+
+.hotel-detail-info-stars {
+    color: #455a64;
 }
