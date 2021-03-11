@@ -1,1 +1,131 @@
-<p>payment works!</p>
+<ng-template #amountTpl>
+  <div fxLayout="row wrap" class="hotel-basket-panel-payment-percent-content">
+    <div
+      fxFlex="50"
+      fxFlex.xs="100"
+      class="hotel-basket-panel-payment-percent-items"
+    >
+      <mat-button-toggle-group color="primary">
+        <mat-button-toggle value="1">Tamamı</mat-button-toggle>
+        <mat-button-toggle value="2">Kapora</mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+
+    <div
+      fxFlex="50"
+      fxFlex.xs="100"
+      class="hotel-basket-panel-payment-percent-price"
+    >
+      <button
+        [disableRipple]="true"
+        mat-flat-button
+        style="background: transparent; border: unset; cursor: default"
+      >
+        Ödenecek Tutar
+      </button>
+      810.00 EUR
+    </div>
+  </div>
+</ng-template>
+
+<div class="basket-payment hotelItem m10">
+    <h2>Ödeme Bilgileri</h2>
+  <mat-accordion>
+    <ng-container>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <i class="far fa-credit-card"></i>
+            Kredi Kartı
+          </mat-panel-title>
+          <mat-panel-description>
+            <mat-icon class="check_icon">check_circle_outline</mat-icon>
+            <mat-icon>radio_button_unchecked</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <ng-container *ngTemplateOutlet="amountTpl"></ng-container>
+
+
+        <div fxLayout="row wrap">
+            <div fxFlex="80">
+                <mat-form-field class="w100">
+                    <mat-label>Ad Soyad</mat-label>
+                    <input matInput />
+                  </mat-form-field>
+            </div>
+
+            <div fxFlex="80">
+                <mat-form-field class="w100 mat-input-background">
+                    <mat-label>Kart Numarası</mat-label>
+                    <input matInput />
+                  </mat-form-field>
+            </div>
+
+            <div fxFlex="80">
+            <div fxLayout="row wrap" fxLayoutGap="10px">
+
+                <div fxFlex="32">
+                    <mat-form-field appearance="fill" class="w100">
+                        <mat-label>Ay</mat-label>
+                        <mat-select>
+                          <mat-option *ngFor="let month of [1,2,3,4,5,6,7,8,9,10,11,12]" [value]="month">
+                            {{month}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                </div>
+    
+                <div fxFlex="32">
+                    <mat-form-field appearance="fill" class="w100">
+                        <mat-label>Yıl</mat-label>
+                        <mat-select>
+                          <mat-option *ngFor="let year of [2021,2022,2023,2024,2025,2026,2027]" [value]="year">
+                            {{year}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                </div>
+    
+    
+                <div fxFlex="32">
+                    <mat-form-field class="w100">
+                        <mat-label>CVV</mat-label>
+                        <input matInput />
+                      </mat-form-field>
+                </div>
+
+            </div>
+            </div>
+
+           
+
+
+        </div>
+
+
+
+      </mat-expansion-panel>
+
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <i class="fas fa-comments-dollar"></i> Havale
+          </mat-panel-title>
+          <mat-panel-description>
+            <mat-panel-description>
+              <mat-icon class="check_icon">check_circle_outline</mat-icon>
+              <mat-icon>radio_button_unchecked</mat-icon>
+            </mat-panel-description>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div>
+          Konaklamadan önce aşağıdaki iban numarasına toplam ücreti havale
+          etmeyi unutmayınız.
+        </div>
+        <div><p>TR320010009999901234567890</p></div>
+      </mat-expansion-panel>
+    </ng-container>
+  </mat-accordion>
+</div>

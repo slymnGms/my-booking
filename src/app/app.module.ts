@@ -25,13 +25,17 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { FacilitysComponent } from './facilitys/facilitys.component';
 
 
 
 
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     SearchboxComponent,
     RoomsComponent,
@@ -43,8 +47,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     HeaderComponent,
     FooterComponent,
     HotelinfoComponent,
-    HotelphotoComponent
-  ],
+    HotelphotoComponent,
+      FacilitysComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -58,8 +63,10 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatInputModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatTooltipModule
-    
+    MatTooltipModule,
+    MatStepperModule,
+    MatExpansionModule,
+    MatButtonToggleModule
     
 
     

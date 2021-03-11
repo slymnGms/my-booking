@@ -1,0 +1,175 @@
+.hotel-basket-panel-detail {
+    display: flex;
+}
+
+.hotel-basket-panel-image img {
+    width: 108px;
+    height: 72px;
+}
+
+.hotel-basket-panel-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.hotel-basket-checkInOut {
+    background-color: #dfdfdf;
+    padding: 10px;
+    width: 100%;
+}
+
+.hotel-basket-checkInOut:first-child {
+    margin-right: 10px;
+}
+
+.hotel-basket-panel-date {
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.hotel-basket-panel-up {
+    margin-bottom: 5px;
+}
+
+.hotel-basket-panel-up-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.hotel-basket-panel-down {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.hotel-basket-panel-down-day {
+    line-height: 31px;
+    font-size: 40px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.hotel-basket-panel-down-day-str {
+    line-height: 8px;
+    font-size: 11px;
+}
+
+.hotel-basket-panel-down-month-str {
+    font-weight: 500;
+}
+
+
+.hotel-basket-panel-item-name {
+    font-size: 16px;
+    font-weight: 500;
+    width: 50%;
+}
+
+.hotel-basket-panel-item-price-container {
+    width: 50%;
+}
+
+.hotel-basket-panel-item-info {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.hotel-basket-panel-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.hotel-basket-panel-item-price-container {
+    width: 50%;
+}
+
+.hotel-basket-panel-item-price-container .hotel-basket-panel-item-price {
+    font-size: 18px;
+    font-weight: 700;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.hotel-basket-panel-item-price-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.hotel-basket-panel-item-properties {
+    padding-top: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 50px;
+}
+
+.hotel-basket-panel-item-properties-left {
+    width: 70%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.hotel-basket-panel-item-properties-right {
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 30%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.hotel-basket-panel-item-properties-left .description-detail {
+    max-height: 50px;
+    min-height: 16px;
+    overflow: auto;
+}
+
+.remove-button {
+    padding: 0;
+    background-color: #f44336;
+    border: unset;
+    border-radius: 25px;
+    position: absolute;
+    color: white;
+    right: 8px;
+    top: 26%;
+    width: 24px;
+    height: 24px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.remove-button  .mat-icon {
+    height: 16px;
+    font-size: 16px;
+    width: 15px;
+    line-height: 16px;
+}
+
+::ng-deep .hotelBasketItem .mat-expansion-indicator {
+    margin-right: 16px;
+}

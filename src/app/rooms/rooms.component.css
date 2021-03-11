@@ -112,6 +112,12 @@
   border-radius: 7px;
 }
 
+.roomPrice {
+  margin: 5px 10px;
+  background: white;
+  padding: 5px;
+}
+
 ::ng-deep .roomCount  .mat-form-field-wrapper  {
   padding: 0px  !important;
   margin: 0;

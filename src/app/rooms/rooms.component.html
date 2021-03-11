@@ -46,7 +46,10 @@
   </div>
 </div>
 
-<div fxLayout="row wrap" fxLayoutGap="10px" class="hotelItem m10 align-center">
+
+<ng-container *ngFor="let item of [1,2,3]">
+
+<div fxLayout="row wrap" fxLayoutGap="10px" class="roomPrice align-center">
   <div fxFlex="40">
     <div class="room-properties">
       <div>
@@ -67,6 +70,8 @@
         <mat-icon>credit_card</mat-icon>
         non-refundable
       </div>
+
+      
     </div>
   </div>
 
@@ -105,11 +110,16 @@
     </mat-form-field>
   </div>
 
-  <div fxFlex="19" style="margin:auto;text-align: center;">
-      <button mat-raised-button color="accent">
-        Satın Al
-        <mat-icon>keyboard_arrow_right</mat-icon>
-      </button>
-  
+  <div fxFlex="19" style="margin: auto; text-align: center">
+    <button mat-raised-button color="accent">
+      Satın Al
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
   </div>
 </div>
+</ng-container>
+
+
+
+
+

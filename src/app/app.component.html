@@ -2,15 +2,21 @@
 <div class="hotel-advisor-container">
   <div class="content">
     <div
-      fxLayout="row wrap" 
+      fxLayout="row wrap"
       fxLayoutAlign="space-between"
       class="mat-elevation-z3 hotel-detail-info hotelItem"
     >
       <div fxFlex="50" fxFlex.xs="100">
         <app-hotelphoto></app-hotelphoto>
       </div>
-      <div fxFlex="50" fxFlex.xs="100">      
-            <app-hotelinfo></app-hotelinfo>
+      <div fxFlex="50" fxFlex.xs="100">
+        <app-hotelinfo></app-hotelinfo>
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="space-between" class="mt-15">
+      <div fxFlex="100">
+        <app-facilitys></app-facilitys>
       </div>
     </div>
 
@@ -24,7 +30,11 @@
       </div>
     </div>
 
-    <div fxLayout="row" fxLayoutAlign="space-between" class="hotel-detail-info mt-15">
+    <div
+      fxLayout="row"
+      fxLayoutAlign="space-between"
+      class="hotel-detail-info mt-15"
+    >
       <div fxFlex="66" class="mat-elevation-z3">
         <app-rooms></app-rooms>
         <app-extras></app-extras>
@@ -33,7 +43,7 @@
         <app-payment></app-payment>
       </div>
 
-      <div fxFlex="33" class="mat-elevation-z3 ">
+      <div fxFlex="33" class="mat-elevation-z3 hotelItem m0" style="height: fit-content;">
         <app-basket></app-basket>
       </div>
     </div>

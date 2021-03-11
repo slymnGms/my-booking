@@ -1,12 +1,12 @@
-
-
 <header class="header">
   <div class="header-bottom-container hotel-advisor-container">
-      <div></div>
+    <div></div>
     <div class="header-bottom">
-      <div class="header-bottom-left">Myhotel</div>
+      <div class="header-bottom-left">
+        <a href="" style="font-size: 20px; font-weight: 500">Myhotel</a>
+      </div>
       <div class="header-bottom-right">
-        <mat-form-field appearance="outline" class="menu-infix">
+        <mat-form-field appearance="outline" class="menu-infix-lang">
           <mat-select name="lang">
             <mat-option *ngFor="let lang of langs" [value]="lang.value">
               {{ lang.value }}
@@ -15,7 +15,7 @@
         </mat-form-field>
 
         <mat-form-field appearance="outline" class="menu-infix">
-          <mat-select name="lang">
+          <mat-select name="cur">
             <mat-option
               *ngFor="let currency of currencys"
               [value]="currency.value"
@@ -33,13 +33,31 @@
         </div>
 
         <div class="header-login-menu headerItem menu-infix">
-          <a
-            class="login-router-link"
-            [routerLink]="['/Login']"
-          >
+          <a class="login-router-link" [routerLink]="['/Login']">
             <mat-icon>account_circle</mat-icon>
             <span>Giriş</span>
           </a>
+        </div>
+
+        <div class="basket-button ng-star-inserted">
+          <button
+            type="button"
+            class="mat-focus-indicator mat-button mat-button-base"
+          >
+            <span class="mat-button-wrapper"
+              ><i
+                matbadgeposition="above after"
+                matbadgecolor="accent"
+                class="mat-badge fas fa-shopping-basket mat-badge-accent mat-badge-overlap mat-badge-above mat-badge-after mat-badge-medium"
+                ><span
+                  id="mat-badge-content-0"
+                  class="mat-badge-content mat-badge-active"
+                  >1</span
+                ></i
+              ></span
+            ><span matripple="" class="mat-ripple mat-button-ripple"></span
+            ><span class="mat-button-focus-overlay"></span>
+          </button>
         </div>
       </div>
       <div></div>
