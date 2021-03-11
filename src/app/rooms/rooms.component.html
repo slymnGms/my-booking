@@ -1,5 +1,5 @@
 <div fxLayout="row wrap" class="hotelItem m10">
-  <div fxFlex="25" style="position: relative" class="hotel-image">
+  <div fxFlex="25" fxFlex.xs="100" fxFlex.md="100" style="position: relative" class="hotel-image">
     <img
       class="w100 hotelphoto"
       src="https://erspublic.blob.core.windows.net/test/170668de-7c8c-4466-8940-073611e53000.jpg"
@@ -11,8 +11,8 @@
       </div>
     </div>
   </div>
-  <div fxFlex="75">
-    <div style="padding: 0 10px">
+  <div fxFlex="75" fxFlex.xs="100" fxFlex.md="100">
+    <div class="rooms-area">
       <h2 class="m0">Standart Oda</h2>
       <p>
         Kaş Antalya bölgesi Çukurbağ Yarımadasındaki MyHotel Kaş ilçesindeki
@@ -49,8 +49,8 @@
 
 <ng-container *ngFor="let item of [1,2,3]">
 
-<div fxLayout="row wrap" fxLayoutGap="10px" class="roomPrice align-center">
-  <div fxFlex="40">
+<div fxLayout="row wrap"  class="roomPrice align-center">
+  <div class="roomItem" fxFlex="40" fxFlex.xs="50" fxFlex.md="50">
     <div class="room-properties">
       <div>
         <button
@@ -75,7 +75,7 @@
     </div>
   </div>
 
-  <div fxFlex="15">
+  <div  class="roomItem" fxFlex="15 "fxFlex.xs="50" fxFlex.md="50">
     <div class="room-price">
       <div class="default-price">
         <span class="price" style="text-decoration: line-through">900</span>
@@ -92,16 +92,16 @@
     </div>
   </div>
 
-  <div fxFlex="10">
+  <div  class="roomItem" fxFlex="10" fxFlex.xs="100">
     <div class="price-percent">%10</div>
   </div>
 
-  <div fxFlex="10">
+  <div  class="roomItem" fxFlex="10" fxFlex.xs="50" fxFlex.md="50">
     <mat-form-field appearance="outline" class="w100 roomCount">
       <mat-label> Oda Sayısı </mat-label>
-      <mat-select value="1">
+      <mat-select [value]="0">
         <mat-option
-          [value]="i + 1"
+          [value]="i"
           *ngFor="let count of [1, 2, 3, 4, 5, 6]; index as i"
         >
           {{ i + 1 }}
@@ -110,8 +110,8 @@
     </mat-form-field>
   </div>
 
-  <div fxFlex="19" style="margin: auto; text-align: center">
-    <button mat-raised-button color="accent">
+  <div  class="roomItem" fxFlex="19" fxFlex.xs="50" fxFlex.md="50" style="margin: auto; text-align: center">
+    <button mat-raised-button color="accent" style="width:100%;">
       Satın Al
       <mat-icon>keyboard_arrow_right</mat-icon>
     </button>

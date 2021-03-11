@@ -4,9 +4,16 @@
     padding: 15px;
 }
 
+@media(min-width:920px) {
+    .hotelInfoPad {
+        padding-left: 15px;
+    }
+}
+
 
 .hotel-contact {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .hotel-contact a {
