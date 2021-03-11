@@ -1,3 +1,9 @@
+@media(max-width:620px) {
+    .header {
+        display: none;
+    }
+}
+
 header {
     background: #b39ddb;
     padding: 5px;

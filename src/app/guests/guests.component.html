@@ -3,65 +3,38 @@
     <h2>Misafir Bilgileri</h2>
   </div>
 
+
+  <ng-container *ngFor="let item of [1,2,3]">
   <div fxLayout="row wrap">
-    <div fxFlex="100">1.Misafir:Yetişkin</div>
-    <div fxFlex="25">
-      <mat-form-field class="example-full-width">
+    <div fxFlex="100">{{item}}.Misafir:Yetişkin</div>
+    <div fxFlex="25" fxFlex.xs="100">
+      <mat-form-field class="w100">
         <mat-label>Ad</mat-label>
         <input matInput />
       </mat-form-field>
     </div>
 
-    <div fxFlex="25">
-      <mat-form-field class="example-full-width">
+    <div fxFlex="25" fxFlex.xs="100">
+      <mat-form-field class="w100">
         <mat-label>Soyad</mat-label>
         <input matInput />
       </mat-form-field>
     </div>
 
-    <div fxFlex="25">
-      <mat-form-field class="example-full-width">
+    <div fxFlex="25" fxFlex.xs="100">
+      <mat-form-field class="w100">
         <mat-label>Telefon</mat-label>
         <input matInput />
       </mat-form-field>
     </div>
 
-    <div fxFlex="25">
-      <mat-form-field class="example-full-width">
+    <div fxFlex="25" fxFlex.xs="100">
+      <mat-form-field class="w100">
         <mat-label>Eposta</mat-label>
         <input matInput />
       </mat-form-field>
     </div>
   </div>
+</ng-container>
 
-  <div fxLayout="row wrap">
-    <div fxFlex="100">2.Misafir:Yetişkin</div>
-    <div fxFlex="25">
-      <mat-form-field class="example-full-width">
-        <mat-label>Ad</mat-label>
-        <input matInput />
-      </mat-form-field>
-    </div>
-
-    <div fxFlex="25">
-      <mat-form-field class="example-full-width">
-        <mat-label>Soyad</mat-label>
-        <input matInput />
-      </mat-form-field>
-    </div>
-
-    <div fxFlex="25">
-      <mat-form-field class="example-full-width">
-        <mat-label>Telefon</mat-label>
-        <input matInput />
-      </mat-form-field>
-    </div>
-
-    <div fxFlex="25">
-      <mat-form-field class="example-full-width">
-        <mat-label>Eposta</mat-label>
-        <input matInput />
-      </mat-form-field>
-    </div>
-  </div>
 </div>
