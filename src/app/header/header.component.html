@@ -1,66 +1,95 @@
+
 <header class="header">
-  <div class="header-bottom-container hotel-advisor-container">
-    <div></div>
-    <div class="header-bottom">
-      <div class="header-bottom-left">
+  <ng-container *ngIf="!isMobile">
+    <div class="container">
+      <div class="headerArea">
+        <div class="logo">
+          <a href="" style="font-size: 20px; font-weight: 500">Myhotel</a>
+        </div>
+        <div class="menuButton">
+          <div class="menuButtonItem">
+            <mat-form-field appearance="outline" class="menu-infix-lang">
+              <mat-select name="lang" [value]="0">
+                <mat-option *ngFor="let lang of langs; index as i" [value]="i">
+                  {{ lang.value }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="menuButtonItem">
+            <mat-form-field appearance="outline" class="menu-infix">
+              <mat-select name="cur" [value]="0">
+                <mat-option
+                  *ngFor="let currency of currencys; index as i"
+                  [value]="i"
+                >
+                  {{ currency.value }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <div class="menuButtonItem checkIn">
+            <a [routerLink]="['/Online']">
+              <i class="fas fa-user-check"></i>
+              <span> Check-in</span>
+            </a>
+          </div>
+
+          <div class="menuButtonItem">
+            <a class="login-router-link" [routerLink]="['/Login']">
+              <mat-icon>account_circle</mat-icon>
+              <span>Giriş</span>
+            </a>
+          </div>
+
+          <div class="menuButtonItem">
+            <button
+              mat-raised-button
+              class="basketButton"
+              matBadge="2"
+              matBadgePosition="after"
+              matBadgeColor="accent"
+            >
+              <i class="fas fa-shopping-basket"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="isMobile">
+    <div class="headerArea">
+      <div class="logo">
         <a href="" style="font-size: 20px; font-weight: 500">Myhotel</a>
       </div>
-      <div class="header-bottom-right">
-        <mat-form-field appearance="outline" class="menu-infix-lang">
-          <mat-select name="lang">
-            <mat-option *ngFor="let lang of langs" [value]="lang.value">
-              {{ lang.value }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-
-        <mat-form-field appearance="outline" class="menu-infix">
-          <mat-select name="cur">
-            <mat-option
-              *ngFor="let currency of currencys"
-              [value]="currency.value"
-            >
-              {{ currency.value }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-
-        <div class="header-onlinecheck headerItem menu-infix">
-          <a [routerLink]="['/Online']">
-            <i class="fas fa-user-check"></i>
-            Check-in
-          </a>
-        </div>
-
-        <div class="header-login-menu headerItem menu-infix">
-          <a class="login-router-link" [routerLink]="['/Login']">
-            <mat-icon>account_circle</mat-icon>
-            <span>Giriş</span>
-          </a>
-        </div>
-
-        <div class="basket-button ng-star-inserted">
+      <div class="menuButton">
+        <div class="menuButtonItem" style="border: none;">
           <button
-            type="button"
-            class="mat-focus-indicator mat-button mat-button-base"
+            mat-raised-button
+            class="basketButton"
+            matBadge="2"
+            matBadgePosition="after"
+            matBadgeColor="accent"
           >
-            <span class="mat-button-wrapper"
-              ><i
-                matbadgeposition="above after"
-                matbadgecolor="accent"
-                class="mat-badge fas fa-shopping-basket mat-badge-accent mat-badge-overlap mat-badge-above mat-badge-after mat-badge-medium"
-                ><span
-                  id="mat-badge-content-0"
-                  class="mat-badge-content mat-badge-active"
-                  >1</span
-                ></i
-              ></span
-            ><span matripple="" class="mat-ripple mat-button-ripple"></span
-            ><span class="mat-button-focus-overlay"></span>
+            <i class="fas fa-shopping-basket"></i>
           </button>
         </div>
+
+        <div class="menuButtonItem">
+          <button mat-icon-button  (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+
+        <mat-drawer-container class="sidenav" autosize>
+          <mat-drawer #drawer class="sidenav-sidenav" mode="side">
+            <div>asasa</div>
+          </mat-drawer>
+        </mat-drawer-container>
+
       </div>
-      <div></div>
     </div>
-  </div>
+  </ng-container>
 </header>

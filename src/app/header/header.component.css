@@ -1,42 +1,63 @@
-@media(max-width:620px) {
-    .header {
-        display: none;
-    }
-}
-
 header {
     background: #b39ddb;
     padding: 5px;
+    
 }
-
-.header-bottom-right {
-    width: 100%;
+.headerArea {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.header-bottom {
-    display: flex;
-}
-
-.header-bottom-left {
-    align-items: center;
-    display: flex;
-}
-
-.header-onlinecheck a, .header-login-menu a{
-    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.headerItem i {
-    color: black;
+.menuButton {
+    display: flex;
+}
+
+.menuButtonItem {
+    align-items: center;
+    display: flex;
+    border-right: 1px solid #ffffff8c;
+    padding: 0 10px;
+}
+
+.menuButtonItem:last-child { 
+    border: none;
+}
+
+.menuButtonItem i, .menuButtonItem .mat-icon {
     margin-right: 5px;
 }
 
-.basket-button i {
+
+.basketButton i {
     font-size: 20px;
 }
 
+.checkIn i {
+    font-size: 16px;
+}
 
+
+.menuButtonItem a {
+    display: flex;
+    align-items: center;
+}
+
+.basketButton {
+    background: transparent;
+    box-shadow: none;
+    min-width: 0px;
+    width: 25px;
+    padding: 0;
+}
+
+.sidenav {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    height: 100vh;
+}
+
+::ng-deep .basketButton .mat-badge-content {
+    top:-4px !important;
+}
