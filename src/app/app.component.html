@@ -20,13 +20,13 @@
       class="mat-elevation-z3 hotel-detail-info hotelItem"
     >
       <div fxFlex="100">
-        <app-searchbox></app-searchbox>
+        <app-searchbox (priceList)="_priceList($event)" ></app-searchbox>
       </div>
     </div>
 
     <div fxLayout="row" fxLayoutAlign="space-between" class="hotel-detail-info mt-15">
       <div fxFlex="66" class="mat-elevation-z3">
-        <app-rooms></app-rooms>
+        <app-rooms [priceList]="priceListData" (basketItem)="_basketItem($event)"></app-rooms>
         <app-extras></app-extras>
         <app-contact></app-contact>
         <app-guests></app-guests>
@@ -34,7 +34,7 @@
       </div>
 
       <div fxFlex="33" class="mat-elevation-z3 ">
-        <app-basket></app-basket>
+        <app-basket [basketItems]="basketItemsData"></app-basket>
       </div>
     </div>
   </div>

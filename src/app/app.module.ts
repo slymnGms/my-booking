@@ -16,17 +16,20 @@ import { FooterComponent } from './footer/footer.component';
 import { HotelinfoComponent } from './hotelinfo/hotelinfo.component';
 import { HotelphotoComponent } from './hotelphoto/hotelphoto.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSelectModule} from '@angular/material/select';
-import {MatIconModule} from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
-import {MatTooltipModule} from '@angular/material/tooltip';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { HttpClientModule } from '@angular/common/http'
 
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DatePipe } from '@angular/common';
 
 
 
@@ -58,14 +61,16 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatInputModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatTooltipModule
-    
-    
+    MatTooltipModule,
+    HttpClientModule
 
-    
-    
+    , FormsModule
+    , ReactiveFormsModule
+
   ],
-  providers: [],
+  providers: [
+    DatePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
