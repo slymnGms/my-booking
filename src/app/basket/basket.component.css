@@ -170,6 +170,20 @@
     line-height: 16px;
 }
 
+.BasketButtons button {
+    margin-right: 5px;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 18px;
+    padding: 5px;
+}
+
+.clearBasketButton {
+    border: 1px solid #f44336;
+    box-shadow: none;
+    color: #f44336;
+}
+
 ::ng-deep .hotelBasketItem .mat-expansion-indicator {
     margin-right: 16px;
 }
