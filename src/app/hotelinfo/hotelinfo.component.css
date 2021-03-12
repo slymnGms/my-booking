@@ -14,6 +14,7 @@
 .hotel-contact {
     display: flex;
     flex-wrap: wrap;
+    margin: 10px 0px;
 }
 
 .hotel-contact a {

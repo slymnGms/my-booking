@@ -106,6 +106,9 @@
   height: 50px;
   justify-content: center;
   border-radius: 7px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
 }
 
 .roomPrice {
@@ -114,7 +117,7 @@
   padding: 5px;
 }
 
-@media (min-width: 920px) {
+@media (min-width: 768px) {
   .rooms-area {
     padding: 0 10px;
   }
@@ -123,6 +126,14 @@
     margin: 5px;
   }
 }
+
+@media (max-width:767px) {
+  .price-percent { 
+    height: 30px;
+    font-size: 18px;
+  }
+}
+
 
 ::ng-deep .roomCount .mat-form-field-wrapper {
   padding: 0px !important;
